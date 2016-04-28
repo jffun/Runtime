@@ -23,6 +23,8 @@
     UITextField *tf;
 }
 
+@property (weak, nonatomic) IBOutlet UIView *navV;
+
 @property (nonatomic, copy)NSString *aaa;
 @property (nonatomic, assign) CGFloat t;
 @end
@@ -266,8 +268,21 @@
 //    [self addBtn];
 //    [self addTextViewAndLabel];
 //    [self addScrollView];
-    [self addTextField];
+//    [self addTextField];
+    [self addImageV];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)addImageV {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"b" ofType:@"jpg"];
+    UIImage *img = [UIImage imageWithContentsOfFile:path];
+    self.view.layer.contents = (id)img.CGImage;
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    UIView *statusBar = (UIView *)[app valueForKey:@"_statusBar"];
+    if (statusBar) {
+        _navV.layer.mask = statusBar.layer;
+    }
 }
 
 #pragma mark - UITextField
