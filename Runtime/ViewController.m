@@ -12,6 +12,7 @@
 #import "TapView.h"
 #import "VaList.h"
 #import "TestViewController.h"
+#import "UIViewController+LoadingView.h"
 
 @interface ViewController ()<UITextViewDelegate>
 {
@@ -269,8 +270,36 @@
 //    [self addTextViewAndLabel];
 //    [self addScrollView];
 //    [self addTextField];
-    [self addImageV];
+//    [self addImageV];
+    [self btnCenter:0];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+#pragma mark - btn,img
+- (IBAction)loading:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (!sender.selected) {
+        [self showLoadingView];
+    } else {
+        [self hideLoadingView];
+    }
+}
+
+- (void)btnCenter:(CGFloat)spacing {
+    CGSize imageSize = _centerBtn.imageView.frame.size;
+    CGSize titleSize = _centerBtn.titleLabel.frame.size;
+    
+    // get the height they will take up as a unit
+    CGFloat totalHeight = (imageSize.height + titleSize.height + spacing);
+    
+    // raise the image and push it right to center it
+    _centerBtn.imageEdgeInsets = UIEdgeInsetsMake(
+                                            - (totalHeight - imageSize.height), 0.0, 0.0, - titleSize.width);
+    
+    // lower the text and push it left to center it
+    _centerBtn.titleEdgeInsets = UIEdgeInsetsMake(
+                                            0.0, - imageSize.width, - (totalHeight - titleSize.height), 0.0);
+    _centerBtn.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)addImageV {

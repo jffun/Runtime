@@ -50,6 +50,15 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaX-T5-sRv">
+                                <rect key="frame" x="57" y="262" width="160" height="150"/>
+                                <inset key="titleEdgeInsets" minX="-72" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="30"/>
+                                <state key="normal" title="附近停车场" image="f_park_notfound.png"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKY-oK-YAh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -57,6 +66,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="centerBtn" destination="OaX-T5-sRv" id="aaJ-Vi-poG"/>
                         <outlet property="navV" destination="YYT-Gd-N9h" id="5va-6h-Rdz"/>
                     </connections>
                 </viewController>
@@ -65,4 +75,7 @@
             <point key="canvasLocation" x="-362" y="70"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f_park_notfound.png" width="116" height="116"/>
+    </resources>
 </document>

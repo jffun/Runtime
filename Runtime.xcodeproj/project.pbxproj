@@ -17,8 +17,10 @@
 		B037B0721C8687E7004D913F /* ClassMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = B037B0711C8687E7004D913F /* ClassMeta.m */; };
 		B037B0751C87EA8D004D913F /* TapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B037B0741C87EA8D004D913F /* TapView.m */; };
 		B037B0781C88474E004D913F /* DicTo.m in Sources */ = {isa = PBXBuildFile; fileRef = B037B0771C88474E004D913F /* DicTo.m */; };
+		B04110C91CD857100014233A /* f_park_notfound@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04110C81CD857100014233A /* f_park_notfound@3x.png */; };
 		B054FEA51CC8D0BF001DA5A4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B054FEA41CC8D0BF001DA5A4 /* TestViewController.m */; };
 		B0E831C91CD2418300E987FA /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E831C81CD2418300E987FA /* b.jpg */; };
+		B0EC5F4F1CDA37BD00A026C6 /* UIViewController+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC5F4E1CDA37BD00A026C6 /* UIViewController+LoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +42,12 @@
 		B037B0741C87EA8D004D913F /* TapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapView.m; sourceTree = "<group>"; };
 		B037B0761C88474E004D913F /* DicTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicTo.h; sourceTree = "<group>"; };
 		B037B0771C88474E004D913F /* DicTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DicTo.m; sourceTree = "<group>"; };
+		B04110C81CD857100014233A /* f_park_notfound@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f_park_notfound@3x.png"; sourceTree = "<group>"; };
 		B054FEA31CC8D0BF001DA5A4 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		B054FEA41CC8D0BF001DA5A4 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		B0E831C81CD2418300E987FA /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+		B0EC5F4D1CDA37BD00A026C6 /* UIViewController+LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LoadingView.h"; sourceTree = "<group>"; };
+		B0EC5F4E1CDA37BD00A026C6 /* UIViewController+LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LoadingView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				B0E831C81CD2418300E987FA /* b.jpg */,
+				B04110C81CD857100014233A /* f_park_notfound@3x.png */,
 				B037B05C1C8687BE004D913F /* AppDelegate.h */,
 				B037B05D1C8687BE004D913F /* AppDelegate.m */,
 				B037B05F1C8687BE004D913F /* ViewController.h */,
@@ -84,6 +90,8 @@
 				B054FEA41CC8D0BF001DA5A4 /* TestViewController.m */,
 				B02CB6091CC85FBE00BBB4ED /* VaList.h */,
 				B02CB60A1CC85FBE00BBB4ED /* VaList.m */,
+				B0EC5F4D1CDA37BD00A026C6 /* UIViewController+LoadingView.h */,
+				B0EC5F4E1CDA37BD00A026C6 /* UIViewController+LoadingView.m */,
 				B037B0761C88474E004D913F /* DicTo.h */,
 				B037B0771C88474E004D913F /* DicTo.m */,
 				B037B0731C87EA8D004D913F /* TapView.h */,
@@ -134,7 +142,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = fengbangshou;
+				ORGANIZATIONNAME = Wanda;
 				TargetAttributes = {
 					B037B0551C8687BE004D913F = {
 						CreatedOnToolsVersion = 7.1;
@@ -165,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B037B0691C8687BE004D913F /* LaunchScreen.storyboard in Resources */,
+				B04110C91CD857100014233A /* f_park_notfound@3x.png in Resources */,
 				B037B0661C8687BE004D913F /* Assets.xcassets in Resources */,
 				B0E831C91CD2418300E987FA /* b.jpg in Resources */,
 				B037B0641C8687BE004D913F /* Main.storyboard in Resources */,
@@ -180,6 +189,7 @@
 			files = (
 				B037B0611C8687BE004D913F /* ViewController.m in Sources */,
 				B037B0751C87EA8D004D913F /* TapView.m in Sources */,
+				B0EC5F4F1CDA37BD00A026C6 /* UIViewController+LoadingView.m in Sources */,
 				B037B05E1C8687BE004D913F /* AppDelegate.m in Sources */,
 				B037B0781C88474E004D913F /* DicTo.m in Sources */,
 				B037B05B1C8687BE004D913F /* main.m in Sources */,
